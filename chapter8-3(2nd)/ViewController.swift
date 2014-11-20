@@ -30,7 +30,7 @@ class ViewController: UIViewController ,UITableViewDataSource, UITableViewDelega
         var fontName = fontName_array[indexPath.row]
         cell.textLabel.text = "ABCD abcd 012345 あいうえお"
         cell.textLabel.font = UIFont(name: fontName, size: 18)
-        
+        cell.textLabel.backgroundColor = UIColor.cyanColor()
         cell.detailTextLabel?.textColor = UIColor.brownColor()
         cell.detailTextLabel?.text = fontName
         return cell
